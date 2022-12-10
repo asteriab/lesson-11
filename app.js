@@ -1,8 +1,8 @@
 // // Task1
 
-let number = prompt("Enter your number:");
-number *= number;
-alert(`The square number is ${number}`);
+// let number = prompt("Enter your number:");
+// number *= number;
+// alert(`The square number is ${number}`);
 
 // // Task2
 
@@ -32,8 +32,17 @@ alert(`The square number is ${number}`);
 // Task4
 
 // let age = Number(prompt("Enter your age:"));
-// if (age >= 18) {
+// if ((age >= 18) & (age <= 45)) {
 //   alert("You can join!");
 // } else {
 //   alert("You cannot join :(");
+// }
+
+// Task5
+// let a = Number(prompt("Enter number A:"));
+// let b = Number(prompt("Enter number B:"));
+// if ((a > 3) & (a < 12) & (b >= 5) & (b < 13)) {
+//   alert("Correct!");
+// } else {
+//   alert("Not correct.");
 // }
