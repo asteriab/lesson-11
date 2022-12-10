@@ -31,18 +31,43 @@
 
 // Task4
 
-// let age = Number(prompt("Enter your age:"));
-// if ((age >= 18) & (age <= 45)) {
-//   alert("You can join!");
-// } else {
-//   alert("You cannot join :(");
-// }
+let age = Number(prompt("Enter your age:"));
+if ((age >= 18) & (age <= 45)) {
+  alert("You can join!");
+} else {
+  alert("You cannot join :(");
+}
 
 // Task5
-// let a = Number(prompt("Enter number A:"));
-// let b = Number(prompt("Enter number B:"));
-// if ((a > 3) & (a < 12) & (b >= 5) & (b < 13)) {
-//   alert("Correct!");
-// } else {
-//   alert("Not correct.");
-// }
+
+let a = Number(prompt("Enter number A:"));
+let b = Number(prompt("Enter number B:"));
+if ((a > 3) & (a < 12) & (b >= 5) & (b < 13)) {
+  alert("Correct!");
+} else {
+  alert("Not correct.");
+}
+
+// Task 6
+
+let userName = prompt("Введіть ім'я:");
+let sum = prompt("Введіть суму депозиту:");
+let term = prompt("Введіть термін депозиту (місяців):");
+let percent = null;
+
+if (term < 6) {
+  percent = 15;
+} else if ((term >= 6) & (term < 9)) {
+  percent = 16;
+} else {
+  percent = 17;
+}
+
+console.log(percent);
+
+let profit = (percent / 100 / 12) * sum * term;
+alert(
+  `Шановний(а) ${userName}, Ви внесли ${sum} грн, під ${percent}% річних, на термін ${term} місяців. За цей період часу Ви заробите ${Math.trunc(
+    profit
+  )} грн.`
+);
